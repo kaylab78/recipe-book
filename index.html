@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Recipe Book</title>
 </head>
@@ -15,11 +16,40 @@
         <form>
             <label for="title">Recipe Name:</label>
             <input type="text" name="title" id="title" />
+            <button id="new-recipe">Start New Recipe</button>
             <label for="ingredient">Ingredients:</label>
             <input type="text" name="ingredient" id="ingredient" />
             <button id="add-ingredient">Add</button>
-            <button id="new-recipe">New Recipe</button>
+            <label for="instructions">Instructions:</label>
+            <input type="textarea" name="instructions" id="instructions" />
+            <button id="add-instructions">Add</button>
         </form>
+
+        <div id="saved-recipes" class="container">
+            <div id="saved-recipes" class="row d-flex justify-content-around align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 card card-block">
+                    <h2 class="card-title">Title</h2>
+                    <ul class="card-text">
+                        <li>Example</li>
+                    </ul>
+                    <p>Instructions</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 card card-block">
+                    <h2 class="card-title"></h2>
+                    <ul class="card-text">
+                        <li>Example</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 card card-block">
+                    <h2 class="card-title"></h2>
+                    <ul class="card-text">
+                        <li>Example</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="./assets/js/script.js"></script>
